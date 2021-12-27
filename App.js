@@ -11,7 +11,7 @@ import {
 import { createStore } from "redux";
 import { Provider as StoreProvider } from "react-redux";
 import reducer from "./redux/reducers";
-// import middleware from "./redux/middleware";
+import middleware from "./redux/middleware";
 import { setLocalNotification } from "./utils/notifications";
 import HomeNavigation from "./components/HomeNavigation";
 

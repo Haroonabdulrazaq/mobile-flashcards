@@ -5,7 +5,6 @@ import styled from "styled-components/native";
 
 const DeckCard = styled(Card)`
   margin-top: 16px;
-
   border-radius: 5px;
 `;
 

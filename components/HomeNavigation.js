@@ -1,9 +1,9 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-// import SingleDeck from "./SingleDeck";
-// import AddCard from "./AddCard";
+import SingleDeck from "./SingleDeck";
+import AddCard from "./AddCard";
 import Quiz from "./Quiz";
-// import BottomTabs from "./BottomTabs";
+import BottomTabs from "./BottomTabs";
 
 const Stack = createStackNavigator();
 
@@ -11,7 +11,7 @@ const MainNavigation = () => {
   return (
     <Stack.Navigator initialRouteName="Main" headerMode="screen">
       <Stack.Screen name=" Flash Cards App" component={BottomTabs} />
-      {/* <Stack.Screen
+      <Stack.Screen
         name="Deck"
         component={SingleDeck}
         options={({ route }) => {
@@ -20,7 +20,7 @@ const MainNavigation = () => {
             title: `${deckID}`,
           };
         }}
-      /> */}
+      />
       <Stack.Screen
         name="AddCard"
         component={AddCard}
